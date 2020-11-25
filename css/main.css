@@ -16,9 +16,18 @@ body {
   color: white;
 }
 
+.nav_links {
+  text-decoration: none;
+}
+
+.nav_link {
+  cursor: pointer;
+}
+
 .logo {
   padding-left: 1rem;
   font-size: large;
+  cursor: pointer;
 }
 
 /* Body Content */
@@ -28,6 +37,10 @@ body {
 
 .home_body h1 {
   color: #29648a;
+}
+
+::placeholder {
+  color: white;
 }
 
 .card h2 {
@@ -53,7 +66,12 @@ body {
 
 /* Footer */
 .copyright {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
   color: white;
+  text-align: center;
 }
 
 @media only screen and (max-width: 768px) {
@@ -68,12 +86,39 @@ body {
     justify-content: space-between;
   }
 
-  #hamburger {
-    padding: 1rem 1rem 0 0;
+  #toggle_button {
+    padding: 1.1rem 1rem 0 0;
     font-size: large;
     cursor: pointer;
   }
 
   .show_menu {
+    position: absolute;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 95%;
+    background-color: rgba(70, 72, 102, 0.8);
+    margin-top: 3.5rem;
+  }
+
+  .nav_link {
+    padding: 1rem;
+    list-style-type: none;
+  }
+
+  /* Body Content */
+  .form {
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .cards {
+    padding: 1rem;
+  }
+
+  .card {
+    text-align: center;
   }
 }

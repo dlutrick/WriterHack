@@ -16,8 +16,12 @@
     <div class="home_header">
       <nav class="navbar">
         <p class="logo">WriterHack</p>
-        <i class="fas fa-bars" id="hamburger"></i>
-        <ul class="nav_links">
+        <i
+          class="fas fa-bars"
+          id="toggle_button"
+          onclick="toggleMenu(); toggleMenuIcon();"
+        ></i>
+        <ul class="nav_links" id="menu">
           <li class="nav_link">Home</li>
           <li class="nav_link">Products</li>
           <li class="nav_link">About</li>
@@ -27,29 +31,35 @@
     </div>
 
     <div class="home_body">
-      <h1>Do you need a professional writer?</h1>
-      <p>
-        Whether it's a resume, blog post or research paper, we've got your back!
-      </p>
-      <input class="form_email" type="email" placeholder="Email" required />
-      <input class="button" type="button" value="submit" />
+      <div class="form">
+        <h1>Do you need a professional writer?</h1>
+        <p>
+          Whether it's a resume, blog post or research paper, we've got your
+          back!
+        </p>
+        <input class="form_email" type="email" placeholder="Email" required />
+        <input class="button" type="button" value="submit" />
+      </div>
 
-      <div class="service_one card">
-        <h2>Resume Writing</h2>
-        <p>This is the descritpion for the resume writing service.</p>
-      </div>
-      <div class="service_two card">
-        <h2>Creative Writing</h2>
-        <p>This is the descritpion for the creative writing service.</p>
-      </div>
-      <div class="service_three card">
-        <h2>Proofreading Service</h2>
-        <p>This is the descritpion for the proofreading service.</p>
+      <div class="cards">
+        <div class="service_one card">
+          <h2>Resume Writing</h2>
+          <p>This is the descritpion for the resume writing service.</p>
+        </div>
+        <div class="service_two card">
+          <h2>Creative Writing</h2>
+          <p>This is the descritpion for the creative writing service.</p>
+        </div>
+        <div class="service_three card">
+          <h2>Proofreading Service</h2>
+          <p>This is the descritpion for the proofreading service.</p>
+        </div>
       </div>
     </div>
 
     <div class="home_footer">
       <p class="copyright">Copyright &copy WriterHack.com 2020</p>
     </div>
+    <script src="./index.js"></script>
   </body>
 </html>
