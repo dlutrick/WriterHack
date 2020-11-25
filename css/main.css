@@ -1,5 +1,79 @@
+/* Whole Document */
 html,
 body {
   margin: 0;
   padding: 0;
+  background-color: #25274d;
+}
+
+/* Universal Styling */
+
+/* Navbar */
+.navbar {
+  display: flex;
+  flex-direction: row;
+  background-color: transparent;
+  color: white;
+}
+
+.logo {
+  padding-left: 1rem;
+  font-size: large;
+}
+
+/* Body Content */
+.home_body {
+  color: white;
+}
+
+.home_body h1 {
+  color: #29648a;
+}
+
+.card h2 {
+  color: #29648a;
+}
+
+.form_email {
+  padding: 4px 1rem 4px 1rem;
+  border-radius: 5px;
+  background-color: #464866;
+  color: white;
+}
+
+.button {
+  padding: 4px 1rem 4px 1rem;
+  border-radius: 5px;
+  border-color: #29648a;
+  border-width: 4px;
+  background-color: #464866;
+  color: white;
+  cursor: pointer;
+}
+
+/* Footer */
+.copyright {
+  color: white;
+}
+
+@media only screen and (max-width: 768px) {
+  /* Navbar */
+  .nav_links {
+    display: none;
+  }
+
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  #hamburger {
+    padding: 1rem 1rem 0 0;
+    font-size: large;
+    cursor: pointer;
+  }
+
+  .show_menu {
+  }
 }
