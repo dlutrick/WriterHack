@@ -24,10 +24,20 @@ body {
   cursor: pointer;
 }
 
+.nav_link a {
+  color: white;
+  text-decoration: none;
+}
+
 .logo {
   padding-left: 1rem;
   font-size: large;
   cursor: pointer;
+}
+
+.logo a {
+  color: white;
+  text-decoration: none;
 }
 
 /* Body Content */
@@ -73,6 +83,7 @@ body {
   text-align: center;
 }
 
+/* Small Screen Styling */
 @media only screen and (max-width: 768px) {
   /* Navbar */
   .nav_links {
