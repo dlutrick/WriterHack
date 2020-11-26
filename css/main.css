@@ -107,6 +107,12 @@ body {
     list-style-type: none;
   }
 
+  .nav_link:hover {
+    background-color: #25274d;
+    padding-left: 75%;
+    padding-right: 75%;
+  }
+
   /* Body Content */
   .form {
     padding: 1rem;
